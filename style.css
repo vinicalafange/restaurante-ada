@@ -1,0 +1,398 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Mukta", sans-serif;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100vh;
+  margin: 0 auto;
+  gap: 45px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  background-color: rgba(243, 238, 238, 0.363);
+}
+
+nav .logo {
+  width: 115px;
+  margin-top: 20px;
+  transform: rotate(35deg);
+}
+
+nav .cart {
+  width: 20px;
+}
+
+.cart1 {
+  border: 1px solid rgb(112, 102, 82);
+  height: 40px;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-radius: 50px;
+  background-color: orange;
+}
+
+.cart1:hover {
+  transform: scale(1.1);
+  box-shadow: 2px 2px 0px black;
+}
+
+nav div a {
+  color: black;
+  text-decoration: none;
+  font-size: 25px;
+  font-weight: 600;
+}
+
+nav .nav {
+  display: flex;
+  width: 290px;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+
+.menu {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+  justify-content: center;
+  padding: 0 8rem;
+}
+
+.prato1 img {
+  width: 100%;
+  height: 80%;
+  object-fit: cover;
+  overflow: hidden;
+  transition: all 0.25s;
+}
+
+.prato1:hover img {
+  transform: scale(1.1);
+}
+
+.prato1 {
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  border: 2px solid rgb(163, 161, 161);
+  border-radius: 10px;
+  max-height: 400px;
+
+  transition: all 0.25s;
+}
+
+.prato1 > .prato-content {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.prato-content > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.add {
+  justify-self: flex-end;
+}
+
+.title {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  cursor: default;
+}
+
+.title h1{
+  font-weight: 600;
+  font-size: 50px;
+}
+
+.title p {
+  font-size: 24px;
+}
+
+.prato1:hover {
+  background-color: orange;
+  cursor: pointer;
+  border: 2px solid black;
+  transform: scale(1.1);
+  box-shadow: 2px 2px 0px 0px rgba(0, 0, 0);
+}
+
+.prato1:hover .prato-content .add {
+  background-color: rgb(255, 253, 250);
+  border: 1px solid rgb(0, 0, 0);
+  border-radius: 10px;
+  padding: 5px;
+}
+
+.prato1:hover .hidden {
+  display: inline-block;
+  padding: 1px 10px;
+}
+
+.location {
+  width: 100%;
+  background-image: url(/images/bg-location.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 100px 0;
+  background-color: antiquewhite;
+}
+
+.location .location-container{
+  display: flex;
+  flex-direction: column;
+}
+
+.location .location-head {
+  display: flex;
+  height: 100px;
+  margin: 0 50px;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.849);
+  color: white;
+  justify-content: space-between;
+  margin-top: 50px;
+}
+
+.location-head .data span {
+  font-size: 12px;
+  display: block;
+  padding-left: 20px;
+}
+
+.location-head .data .edit {
+  font-size: 16px;
+}
+
+.location .location-head .wrapper-location {
+  display: flex;
+  align-items: center;
+  padding: 0 40px;
+}
+
+.map {
+  margin: 0 50px;
+}
+
+.icon {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  border: 2px solid white;
+  border-radius: 100%;
+  align-items: center;
+  padding: 15px;
+  justify-content: center;
+}
+
+footer {
+  display: flex;
+  align-items: center;
+  background-color: rgb(168, 152, 123);
+  height: 60px;
+  justify-content: center;
+}
+
+.customer {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto;
+  gap: 80px;
+}
+
+.item1 {
+  grid-column: 1 / span 3;
+}
+
+.item2,
+.item3,
+.item4 {
+  grid-column: span 1;
+  width: 200px;
+  margin: 0 auto;
+}
+
+.customer span {
+  font-weight: bold;
+}
+
+.customer img {
+  width: 50px;
+}
+
+.prato1 .text {
+  font-size: 25px;
+  font-weight: 600;
+}
+
+.hidden {
+  display: none;
+  margin-right: 10px;
+  font-weight: 600;
+  border: 1px solid rgb(0, 0, 0);
+  padding-left: 2px;
+  padding-right: 2px;
+  border-radius: 35px;
+  background-color: orange;
+}
+
+/* Tiago :) */
+.login {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#email,
+#password {
+  padding: 0.5rem;
+  margin: 0.5rem;
+  transition: 0.2s ease;
+}
+
+#email:hover,
+#password:hover {
+  padding: 0.5rem;
+  margin: 0.5rem;
+  border: 0.1rem solid #f4a14e;
+  transition: 0.2s ease;
+}
+
+.login label {
+  font-size: large;
+}
+
+.login button {
+  background-color: black;
+  color: white;
+  border: none;
+  width: 10rem;
+  font-size: large;
+  border-radius: 0.5rem;
+  transition: ease 0.5s;
+  cursor: pointer;
+}
+
+.login button:hover {
+  transition: ease 0.5s;
+  color: black;
+  background-color: #f4a14e;
+}
+
+/* ========= CART =========*/
+#cart-container {
+  width: 600px;
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+  margin: 5vh auto;
+}
+
+.order {
+  display: flex;
+  gap: 1.2rem;
+  padding: 0.6rem;
+  border: 0.6px solid rgb(168, 152, 123);
+  border-radius: 1rem;
+}
+
+.order-content {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.details > p {
+  font-size: 0.8rem;
+  line-height: 100%;
+}
+
+.order-img {
+  flex-shrink: 0;
+  width: 8rem;
+  height: 8rem;
+  border-radius: 0.6rem;
+  object-fit: cover;
+  overflow: hidden;
+}
+
+.order-title,
+.order-price,
+.order-quantity,
+.total > p {
+  font-weight: 600;
+}
+
+.order-title,
+.order-price {
+  font-size: 1.2rem;
+}
+
+.order-quantity,
+.total > span {
+  color: rgb(168, 152, 123);
+}
+
+.order-quantity-edit {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0.2rem;
+  border-radius: 0.4rem;
+  box-shadow: 0rem 0rem 0.4rem rgba(168, 152, 123, 0.649);
+}
+
+.order-edit {
+  width: 3rem;
+  color: orange;
+  transition: 0.4s ease;
+}
+
+.order-edit:hover {
+  color: rgb(168, 152, 123);
+}
+
+.total > p {
+  font-size: 1.4rem;
+  line-height: 100%;
+}
+
+.finalize-purchase {
+  font-size: 1.2rem;
+  padding: 0.4rem 1.6rem;
+  border-radius: 0.4rem;
+  background-color: black;
+  color: white;
+  transition: 0.4s ease;
+}
+
+.finalize-purchase:hover {
+  background-color: orange;
+  color: black;
+}
+
+h2{
+  font-size: 20px;
+}
