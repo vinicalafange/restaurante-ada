@@ -16,7 +16,6 @@ nav {
 nav .logo {
     width: 115px;
     margin-top: 20px;
-    transform: rotate(35deg);
 }
 
 nav .cart {

@@ -1,90 +1,87 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="stylesheet" href="style.css" />
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-        <link
-            href="https://fonts.googleapis.com/css2?family=Mukta:wght@300;400;600&display=swap"
-            rel="stylesheet"
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Mukta:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles/global.css" />
+    <link rel="stylesheet" href="styles/login.css" />
+    <title>Login - Nome Restaurante</title>
+  </head>
+  <body>
+    <nav class="navbar">
+      <a href="index.html" class="logo">
+        <img class="rotate-[35deg]" src="img/desordem.png" alt="logo" />
+      </a>
+
+      <menu class="menu-nav flex gap-3 items-center">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="sobrenos.html">Sobre Nós</a></li>
+        <li><a href="login.html">Login</a></li>
+        <li class="carrinho">
+          <a href="cart.html">
+            <button>
+              Carrinho
+              <img src="./img/carrinho-de-compras.png" alt="cart" />
+            </button>
+          </a>
+        </li>
+      </menu>
+
+      <div class="menu-hamburger">
+        <i class="fa-solid fa-bars"></i>
+      </div>
+    </nav>
+    <main>
+      <section class="login">
+        <span class="title">
+          <h1>Quem é você?!</h1>
+          <p>Faça o login e a comida chegará rapidinho!</p>
+        </span>
+        <label for="email">Usuário:</label>
+        <input
+          type="email"
+          name="email"
+          id="email"
+          placeholder="email@email.com"
         />
-        <link rel="stylesheet" href="styles/global.css" />
-        <link rel="stylesheet" href="styles/login.css" />
-        <title>Login - Nome Restaurante</title>
-    </head>
-    <body>
-        <nav class="navbar">
-            <a href="index.html" class="logo">
-                <img class="rotate-[35deg]" src="img/desordem.png" alt="logo" />
-            </a>
+        <label for="password">Senha:</label>
 
-            <menu class="menu-nav flex gap-3 items-center">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="sobrenos.html">Sobre Nós</a></li>
-                <li><a href="login.html">Login</a></li>
-                <li class="carrinho">
-                    <a href="cart.html">
-                        <button>
-                            Carrinho
-                            <img
-                                src="./img/carrinho-de-compras.png"
-                                alt="cart"
-                            />
-                        </button>
-                    </a>
-                </li>
-            </menu>
-
-            <div class="menu-hamburger">
-                <i class="fa-solid fa-bars"></i>
-            </div>
-        </nav>
-        <main>
-            <section class="login">
-                <span class="title">
-                    <h1>Quem é você?!</h1>
-                    <p>Faça o login e a comida chegará rapidinho!</p>
-                </span>
-                <label for="email">Usuário:</label>
-                <input
-                    type="email"
-                    name="email"
-                    id="email"
-                    placeholder="email@email.com.br"
-                />
-                <label for="password">Senha:</label>
-
-                <input
-                    type="password"
-                    name="password"
-                    id="password"
-                    placeholder="********"
-                />
-                <button>Entrar!</button>
-            </section>
-        </main>
-        <footer class="footer">
-            <div class="logo">
-                <img src="img/desordem.png" alt="" />
-            </div>
-            <div class="contato">
-                <div class="redes">
-                    <a href=""><i class="fa-brands fa-facebook-f"></i></a>
-                    <a href=""><i class="fa-brands fa-instagram"></i></a>
-                    <a href=""><i class="fa-solid fa-envelope"></i></a>
-                </div>
-                <h3>Fale Conosco</h3>
-                <p class="email">sac@restaurante.com</p>
-            </div>
-            <div>
-                <menu class="menu-footer">
-                    <li><a href="./index.html">HOME</a></li>
-                    <li><a href="./sobrenos.html">SOBRE NÓS</a></li>
-                    <li><a href="./cart.html">CARRINHO</a></li>
-                </menu>
-            </div>
-        </footer>
-    </body>
+        <input
+          type="password"
+          name="password"
+          id="password"
+          placeholder="********"
+        />
+        <button>Entrar!</button>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="logo">
+        <img src="img/desordem.png" alt="" />
+      </div>
+      <div class="contato">
+        <div class="redes">
+          <a href=""><i class="fa-brands fa-facebook-f"></i></a>
+          <a href=""><i class="fa-brands fa-instagram"></i></a>
+          <a href=""><i class="fa-solid fa-envelope"></i></a>
+        </div>
+        <h3>Fale Conosco</h3>
+        <p class="email">sac@restaurante.com</p>
+      </div>
+      <div>
+        <menu class="menu-footer">
+          <li><a href="./index.html">HOME</a></li>
+          <li><a href="./sobrenos.html">SOBRE NÓS</a></li>
+          <li><a href="./cart.html">CARRINHO</a></li>
+        </menu>
+      </div>
+    </footer>
+  </body>
 </html>
