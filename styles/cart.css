@@ -1,0 +1,123 @@
+
+  /* ========= CART =========*/
+  #cart-container {
+    width: 600px;
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+    margin: 5vh auto;
+  }
+  
+  .order {
+    display: flex;
+    gap: 1.2rem;
+    padding: 0.6rem;
+    border: 0.6px solid rgb(168, 152, 123);
+    border-radius: 1rem;
+  }
+  
+  .order-content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .details > p {
+    font-size: 0.8rem;
+    line-height: 100%;
+  }
+  
+  .order-img {
+    flex-shrink: 0;
+    width: 8rem;
+    height: 8rem;
+    border-radius: 0.6rem;
+    object-fit: cover;
+    overflow: hidden;
+  }
+  
+  .order-title,
+  .order-price,
+  .order-quantity,
+  .total > p {
+    font-weight: 600;
+  }
+  
+  .order-title,
+  .order-price {
+    font-size: 1.2rem;
+  }
+  
+  .order-quantity,
+  .total > span {
+    color: rgb(168, 152, 123);
+  }
+  
+  .order-quantity-edit {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0.2rem;
+    border-radius: 0.4rem;
+    box-shadow: 0rem 0rem 0.4rem rgba(168, 152, 123, 0.649);
+  }
+  
+  .order-edit {
+    width: 3rem;
+    color: orange;
+    transition: 0.4s ease;
+  }
+  
+  .order-edit:hover {
+    color: rgb(168, 152, 123);
+  }
+  
+  .total > p {
+    font-size: 1.4rem;
+    line-height: 100%;
+  }
+  
+  .finalize-purchase {
+    font-size: 1.2rem;
+    padding: 0.4rem 1.6rem;
+    border-radius: 0.4rem;
+    background-color: black;
+    color: white;
+    transition: 0.4s ease;
+  }
+  
+  .finalize-purchase:hover {
+    background-color: orange;
+    color: black;
+  }
+  
+  h2{
+    font-size: 20px;
+  }
+@media screen and (max-width: 640px) {
+    #cart-container {
+        width: 100%;
+        padding: 0.5rem;
+    }
+    .order-price, .order-title {
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+    .wrapper {
+        flex-wrap: wrap;
+    }
+    .order-quantity-edit {
+        margin-left: auto;
+    }
+    .order-img {
+        width: 30%;
+        max-width: 8rem;
+    }
+}

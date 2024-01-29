@@ -1,164 +1,173 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script
-      src="https://kit.fontawesome.com/47a4778f76.js"
-      crossorigin="anonymous"
-    ></script>
-    <style type="text/tailwindcss">
-      .menu-nav > li {
-        @apply transition-opacity;
-      }
-      .menu-nav > li:hover {
-        @apply opacity-90;
-      }
-      .about-us-text {
-        @apply text-center opacity-90 leading-7;
-      }
-      .menu-footer > li {
-        @apply text-white opacity-80 transition-opacity border-b w-full border-white/50;
-      }
-      .menu-footer > li:hover {
-        @apply opacity-100;
-      }
-    </style>
-    <title>Carrinho</title>
-  </head>
-  <body>
-    <nav class="flex justify-between bg-orange-50/50 p-6">
-      <a href="index.html" class="w-12">
-        <img class="rotate-[35deg]" src="img/desordem.png" alt="logo" />
-      </a>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="styles/global.css" />
+        <link rel="stylesheet" href="styles/cart.css" />
+        <script
+            src="https://kit.fontawesome.com/47a4778f76.js"
+            crossorigin="anonymous"
+        ></script>
+        <title>Carrinho</title>
+    </head>
+    <body>
+        <nav class="navbar">
+            <a href="index.html" class="logo">
+                <img class="rotate-[35deg]" src="img/desordem.png" alt="logo" />
+            </a>
 
-      <menu class="menu-nav flex gap-3 items-center">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="login.html">Login</a></li>
-        <li>
-          <a href="cart.html">
-            <button
-              class="flex gap-2 items-center justify-center p-2 rounded-lg bg-orange-300"
-            >
-              Carrinho
-              <img class="w-6" src="./img/carrinho-de-compras.png" alt="cart" />
-            </button>
-          </a>
-        </li>
-      </menu>
-    </nav>
-    <main>
-      <div id="cart-container">
-        <section class="order">
-          <img src="./img/hamburguer.jpg" alt="hambúrguer" class="order-img" />
-          <div class="order-content">
-            <div class="wrapper">
-              <p class="order-title">Hambúrguer</p>
-              <button>
-                <i class="fa-regular fa-pen-to-square fa-lg order-edit"></i>
-              </button>
+            <menu class="menu-nav flex gap-3 items-center">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="sobrenos.html">Sobre Nós</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li class="carrinho">
+                    <a href="cart.html">
+                        <button>
+                            Carrinho
+                            <img
+                                src="./img/carrinho-de-compras.png"
+                                alt="cart"
+                            />
+                        </button>
+                    </a>
+                </li>
+            </menu>
+
+            <div class="menu-hamburger">
+                <i class="fa-solid fa-bars"></i>
             </div>
-            <div class="details">
-              <p>1 Ketchup</p>
-              <p>1 Mostarda</p>
-              <p>Obs.: sem cebola</p>
+        </nav>
+        <main>
+            <div id="cart-container">
+                <section class="order">
+                    <img
+                        src="./img/hamburguer.jpg"
+                        alt="hambúrguer"
+                        class="order-img"
+                    />
+                    <div class="order-content">
+                        <div class="wrapper">
+                            <p class="order-title">Hambúrguer</p>
+                            <button>
+                                <i
+                                    class="fa-regular fa-pen-to-square fa-lg order-edit"
+                                ></i>
+                            </button>
+                        </div>
+                        <div class="details">
+                            <p>1 Ketchup</p>
+                            <p>1 Mostarda</p>
+                            <p>Obs.: sem cebola</p>
+                        </div>
+                        <div class="wrapper">
+                            <p class="order-price">R$ 30,00</p>
+                            <div class="order-quantity-edit">
+                                <button>
+                                    <i class="fa-solid fa-trash order-edit"></i>
+                                </button>
+                                <span class="order-quantity">1</span>
+                                <button>
+                                    <i class="fa-solid fa-plus order-edit"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="order">
+                    <img
+                        src="./img/hot-dog.jpg"
+                        alt="cachorro-quente"
+                        class="order-img"
+                    />
+                    <div class="order-content">
+                        <div class="wrapper">
+                            <p class="order-title">Dogão</p>
+                            <button>
+                                <i
+                                    class="fa-regular fa-pen-to-square fa-lg order-edit"
+                                ></i>
+                            </button>
+                        </div>
+                        <div class="details">
+                            <p>1 Ketchup</p>
+                            <p>1 Maionese</p>
+                        </div>
+                        <div class="wrapper">
+                            <p class="order-price">R$ 15,00</p>
+                            <div class="order-quantity-edit">
+                                <button>
+                                    <i class="fa-solid fa-trash order-edit"></i>
+                                </button>
+                                <span class="order-quantity">1</span>
+                                <button>
+                                    <i class="fa-solid fa-plus order-edit"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="order">
+                    <img
+                        src="./img/fries.jpg"
+                        alt="batata frita"
+                        class="order-img"
+                    />
+                    <div class="order-content">
+                        <div class="wrapper">
+                            <p class="order-title">Fritas</p>
+                            <button>
+                                <i
+                                    class="fa-regular fa-pen-to-square fa-lg order-edit"
+                                ></i>
+                            </button>
+                        </div>
+                        <div class="details">
+                            <p>1 Bacon</p>
+                        </div>
+                        <div class="wrapper">
+                            <p class="order-price">R$ 34,00</p>
+                            <div class="order-quantity-edit">
+                                <button>
+                                    <i class="fa-solid fa-minus order-edit"></i>
+                                </button>
+                                <span class="order-quantity">2</span>
+                                <button>
+                                    <i class="fa-solid fa-plus order-edit"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <div class="wrapper">
+                    <div class="total">
+                        <span>Total</span>
+                        <p>R$ 79,00</p>
+                    </div>
+                    <button class="finalize-purchase">Continuar</button>
+                </div>
             </div>
-            <div class="wrapper">
-              <p class="order-price">R$ 30,00</p>
-              <div class="order-quantity-edit">
-                <button><i class="fa-solid fa-trash order-edit"></i></button>
-                <span class="order-quantity">1</span>
-                <button><i class="fa-solid fa-plus order-edit"></i></button>
-              </div>
+        </main>
+
+        <footer class="footer">
+            <div class="logo">
+                <img src="img/desordem.png" alt="" />
             </div>
-          </div>
-        </section>
-        <section class="order">
-          <img
-            src="./img/hot-dog.jpg"
-            alt="cachorro-quente"
-            class="order-img"
-          />
-          <div class="order-content">
-            <div class="wrapper">
-              <p class="order-title">Dogão</p>
-              <button>
-                <i class="fa-regular fa-pen-to-square fa-lg order-edit"></i>
-              </button>
+            <div class="contato">
+                <div class="redes">
+                    <a href=""><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href=""><i class="fa-brands fa-instagram"></i></a>
+                    <a href=""><i class="fa-solid fa-envelope"></i></a>
+                </div>
+                <h3>Fale Conosco</h3>
+                <p class="email">sac@restaurante.com</p>
             </div>
-            <div class="details">
-              <p>1 Ketchup</p>
-              <p>1 Maionese</p>
+            <div>
+                <menu class="menu-footer">
+                    <li><a href="./index.html">HOME</a></li>
+                    <li><a href="./sobrenos.html">SOBRE NÓS</a></li>
+                </menu>
             </div>
-            <div class="wrapper">
-              <p class="order-price">R$ 15,00</p>
-              <div class="order-quantity-edit">
-                <button><i class="fa-solid fa-trash order-edit"></i></button>
-                <span class="order-quantity">1</span>
-                <button><i class="fa-solid fa-plus order-edit"></i></button>
-              </div>
-            </div>
-          </div>
-        </section>
-        <section class="order">
-          <img src="./img/fries.jpg" alt="batata frita" class="order-img" />
-          <div class="order-content">
-            <div class="wrapper">
-              <p class="order-title">Fritas</p>
-              <button>
-                <i class="fa-regular fa-pen-to-square fa-lg order-edit"></i>
-              </button>
-            </div>
-            <div class="details">
-              <p>1 Bacon</p>
-            </div>
-            <div class="wrapper">
-              <p class="order-price">R$ 34,00</p>
-              <div class="order-quantity-edit">
-                <button><i class="fa-solid fa-minus order-edit"></i></button>
-                <span class="order-quantity">2</span>
-                <button><i class="fa-solid fa-plus order-edit"></i></button>
-              </div>
-            </div>
-          </div>
-        </section>
-        <div class="wrapper">
-          <div class="total">
-            <span>Total</span>
-            <p>R$ 79,00</p>
-          </div>
-          <button class="finalize-purchase">Continuar</button>
-        </div>
-      </div>
-    </main>
-    <footer class="h-[250px] w-full bg-amber-800/60 mt-4 grid grid-cols-3 p-8">
-      <div class="flex justify-center items-center">
-        <img src="img/desordem.png" class="h-24" alt="" />
-      </div>
-      <div
-        class="flex flex-col items-center text-white border-l-2 border-r-2 border-white/20"
-      >
-        <div class="space-x-3 mb-4">
-          <a href=""><i class="fa-brands fa-facebook-f"></i></a>
-          <a href=""><i class="fa-brands fa-instagram"></i></a>
-          <a href=""><i class="fa-solid fa-envelope"></i></a>
-        </div>
-        <h3 class="text-2xl tracking-wider font-semibold">Fale Conosco</h3>
-        <div>
-          <p class="text-sm decoration-solid">sac@restaurante.com</p>
-        </div>
-      </div>
-      <div>
-        <menu
-          class="menu-footer flex flex-col justify-center items-center h-full p-12 gap-2"
-        >
-          <li><a href="./index.html">HOME</a></li>
-          <li><a href="./sobrenos.html">SOBRE NÓS</a></li>
-          <li><a href="./cart.html">CARRINHO</a></li>
-        </menu>
-      </div>
-    </footer>
-  </body>
+        </footer>
+    </body>
 </html>

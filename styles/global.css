@@ -1,0 +1,205 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+
+}
+
+body {
+    height: auto;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+li {
+    list-style: none;
+}
+
+button {
+    border: none;
+    cursor: pointer;
+    font: inherit;
+    background: none;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(255 247 237 / 0.5);
+    padding: 1.5rem;
+}
+
+.navbar>.logo {
+    margin: 0;
+    width: 48px;
+}
+
+.navbar>.logo img {
+    transform: rotate(35deg);
+    max-width: 100%;
+}
+
+.menu-nav {
+    display: flex;
+    gap: 0.75rem;
+    align-items: center;
+}
+
+.menu-hamburger {
+    display: none;
+}
+
+.menu-nav>li {
+    transition-property: opacity;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 150ms;
+}
+
+
+.menu-nav>li:hover {
+    opacity: 0.9;
+}
+
+.carrinho button {
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+    justify-content: center;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    background-color: rgb(253 186 116);
+}
+
+.carrinho button>img {
+    width: 1.5rem;
+}
+
+.menu-footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    padding: 3rem;
+    gap: 0.5rem;
+}
+
+.footer {
+    height: 250px;
+    width: 100%;
+    background-color: rgb(146 64 14 / 0.6);
+    color: white;
+    margin-top: 1rem;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    padding: 2rem;
+}
+
+.footer>.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer>.logo img {
+    height: 6rem;
+}
+
+.footer>.contato {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-style: solid;
+    border-left-width: 2px;
+    border-right-width: 2px;
+    border-top: none;
+    border-bottom: none;
+    border-color: rgba(255, 255, 255, 0.2);
+}
+
+.footer>.contato .redes {
+    display: flex;
+    gap: 0.75rem;
+    margin-bottom: 1rem;
+}
+
+.footer>.contato h3 {
+    font-size: 1.5rem;
+    line-height: 2rem;
+    letter-spacing: 0.05em;
+    font-weight: 600;
+}
+
+.footer>.contato .email {
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    text-decoration: solid;
+}
+
+.menu-footer>li {
+    color: white;
+    opacity: 0.8;
+    transition-property: opacity;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 150ms;
+    border-style: solid;
+    border-bottom-width: 1px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-color: rgb(255 255 255 / 0.5);
+    width: 100%;
+}
+
+.menu-footer>li:hover {
+    opacity: 1;
+}
+
+
+@media screen and (max-width:768px) {
+    .footer {
+        height: fit-content;
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+        padding: 0.5rem;
+        padding-top: 2rem;
+    }
+
+    .footer>.contato {
+        border-top-style: solid;
+        border-bottom-style: solid;
+        padding: 1rem;
+        border-top-width: 2px;
+        border-bottom-width: 2px;
+        border-left-width: 0;
+        border-right-width: 0;
+    }
+
+    .menu-footer {
+        padding: 1rem;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .menu-nav {
+        display: none;
+    }
+
+    .menu-hamburger {
+        display: flex;
+        align-items: center;
+        font-size: 1.5rem;
+        line-height: 2rem;
+    }
+}

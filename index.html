@@ -1,239 +1,247 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Mukta:wght@300;400;600&display=swap"
-      rel="stylesheet"
-    />
-    <script src="https://cdn.tailwindcss.com"></script>
-    <style type="text/tailwindcss">
-      .menu-nav > li {
-        @apply transition-opacity;
-      }
-      .menu-nav > li:hover {
-        @apply opacity-90;
-      }
-      .about-us-text {
-        @apply text-center opacity-90 leading-7;
-      }
-      .menu-footer > li {
-        @apply text-white opacity-80 transition-opacity border-b w-full border-white/50;
-      }
-      .menu-footer > li:hover {
-        @apply opacity-100;
-      }
-    </style>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="style.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Mukta:wght@300;400;600&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="styles/global.css" />
+        <link rel="stylesheet" href="styles/home.css" />
+        <script
+            src="https://kit.fontawesome.com/47a4778f76.js"
+            crossorigin="anonymous"
+        ></script>
 
-    <title>Home - Restaurante</title>
-  </head>
-  <body>
-    <nav class="flex justify-between bg-orange-50/50 p-6">
-      <a href="index.html" class="w-12">
-        <img class="rotate-[35deg]" src="img/desordem.png" alt="logo" />
-      </a>
+        <title>Home - Restaurante</title>
+    </head>
+    <body>
+        <nav class="navbar">
+            <a href="index.html" class="logo">
+                <img class="rotate-[35deg]" src="img/desordem.png" alt="logo" />
+            </a>
 
-      <menu class="menu-nav flex gap-3 items-center">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="login.html">Login</a></li>
-        <li>
-          <a href="cart.html">
-            <button
-              class="flex gap-2 items-center justify-center p-2 rounded-lg bg-orange-300"
-            >
-              Carrinho
-              <img class="w-6" src="./img/carrinho-de-compras.png" alt="cart" />
-            </button>
-          </a>
-        </li>
-      </menu>
-    </nav>
-    <main>
-      <section class="title">
-        <h1>Nosso Cardápio</h1>
-        <p>Clique para adicionar os produtos dos Deuses no carrinho</p>
-      </section>
-      <section class="menu">
-        <div class="prato1">
-          <img src="./img/hamburguer.jpg" alt="hamburguer" />
-          <div class="prato-content">
-            <div>
-              <p class="text">Hambúrguer</p>
+            <menu class="menu-nav flex gap-3 items-center">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="sobrenos.html">Sobre Nós</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li class="carrinho">
+                    <a href="cart.html">
+                        <button>
+                            Carrinho
+                            <img
+                                src="./img/carrinho-de-compras.png"
+                                alt="cart"
+                            />
+                        </button>
+                    </a>
+                </li>
+            </menu>
 
-              <p>Completo X-Tudão dos Deuses</p>
+            <div class="menu-hamburger">
+                <i class="fa-solid fa-bars"></i>
             </div>
-            <p class="add"><span class="hidden">+</span>Adicionar</p>
-          </div>
-        </div>
+        </nav>
+        <main>
+            <section class="title">
+                <h1>Nosso Cardápio</h1>
+                <p>Clique para adicionar os produtos dos Deuses no carrinho</p>
+            </section>
+            <section class="menu">
+                <div class="prato1">
+                    <img src="./img/hamburguer.jpg" alt="hamburguer" />
+                    <div class="prato-content">
+                        <div>
+                            <p class="text">Hambúrguer</p>
 
-        <div class="prato1">
-          <img src="./img/penne.jpg" alt="penne" />
+                            <p>Completo X-Tudão dos Deuses</p>
+                        </div>
+                        <p class="add">
+                            <span class="hidden">+</span>Adicionar
+                        </p>
+                    </div>
+                </div>
 
-          <div class="prato-content">
-            <div>
-              <p class="text">Penne</p>
-              <p>Completo Penne dos Deuses</p>
-            </div>
-            <p class="add"><span class="hidden">+</span>Adicionar</p>
-          </div>
-        </div>
-        <div class="prato1">
-          <img src="./img/hot-dog.jpg" alt="hotdog" />
+                <div class="prato1">
+                    <img src="./img/penne.jpg" alt="penne" />
 
-          <div class="prato-content">
-            <div>
-              <p class="text">Dogão</p>
-              <p>Completo Hot Dog dos Deuses</p>
-            </div>
-            <p class="add"><span class="hidden">+</span>Adicionar</p>
-          </div>
-        </div>
-        <div class="prato1">
-          <img src="./img/fries.jpg" alt="fries" />
+                    <div class="prato-content">
+                        <div>
+                            <p class="text">Penne</p>
+                            <p>Completo Penne dos Deuses</p>
+                        </div>
+                        <p class="add">
+                            <span class="hidden">+</span>Adicionar
+                        </p>
+                    </div>
+                </div>
+                <div class="prato1">
+                    <img src="./img/hot-dog.jpg" alt="hotdog" />
 
-          <div class="prato-content">
-            <div>
-              <p class="text">Fritas</p>
+                    <div class="prato-content">
+                        <div>
+                            <p class="text">Dogão</p>
+                            <p>Completo Hot Dog dos Deuses</p>
+                        </div>
+                        <p class="add">
+                            <span class="hidden">+</span>Adicionar
+                        </p>
+                    </div>
+                </div>
+                <div class="prato1">
+                    <img src="./img/fries.jpg" alt="fries" />
 
-              <p>Completo Batatinha dos Deuses</p>
-            </div>
-            <p class="add"><span class="hidden">+</span>Adicionar</p>
-          </div>
-        </div>
-      </section>
+                    <div class="prato-content">
+                        <div>
+                            <p class="text">Fritas</p>
 
-      <section id="location" class="location">
-        <section class="title">
-          <h2>Encontre os Deuses exatamente aqui!</h2>
-        </section>
-        <section class="location-container">
-          <div class="location-head">
-            <div class="wrapper-location">
-              <div class="icon">
-                <img src="/img/map-img1.png" alt="Icone localizacao" />
-              </div>
-              <div class="data">
-                <span>Localização</span>
-                <span class="edit">Rua Dom Pedro II, 440</span>
-              </div>
-            </div>
-  
-            <div class="wrapper-location">
-              <div class="icon">
-                <img src="/img/map-img2.png" alt="Icone Tel" />
-              </div>
-              <div class="data">
-                <span>Telefone</span>
-                <span class="edit">(35) 3876-4266</span>
-              </div>
-            </div>
-  
-            <div class="wrapper-location">
-              <div class="icon">
-                <img src="/img/map-img3.png" alt="Icone Email" />
-              </div>
-              <div class="data">
-                <span>E-mail</span>
-                <span class="edit">restaurante@email.com</span>
-              </div>
-            </div>
-  
-            <div class="wrapper-location">
-              <div class="icon">
-                <img src="/img/map-img4.png" alt="Icone Horario" />
-              </div>
-              <div class="data">
-                <span>Horário</span>
-                <span class="edit">Seg. a Sex. - 18:00 às 23:00 </span>
-              </div>
-            </div>
-          </div>
-  
-          <div class="map">
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d29482.34750808337!2d-44.13106!3d-22.530678!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9e98fc3aab65f7%3A0xf0c1b495423b3fe!2sR.%20Dom%20Pedro%20II%2C%20440%20-%20Pte.%20Alta%2C%20Volta%20Redonda%20-%20RJ%2C%2027267-360%2C%20Brasil!5e0!3m2!1spt-BR!2sus!4v1680227880555!5m2!1spt-BR!2sus"
-              width="100%"
-              height="500"
-              style="border: 5px solid rgba(0, 0, 0, 0.87)"
-              allowfullscreen=""
-              loading="lazy"
-              referrerpolicy="no-referrer-when-downgrade"
-            ></iframe>
-          </div>
-        </section>
+                            <p>Completo Batatinha dos Deuses</p>
+                        </div>
+                        <p class="add">
+                            <span class="hidden">+</span>Adicionar
+                        </p>
+                    </div>
+                </div>
+            </section>
 
-        
-      </section>
+            <section id="location" class="location">
+                <section class="title">
+                    <h2>Encontre os Deuses exatamente aqui!</h2>
+                </section>
+                <section class="location-container">
+                    <div class="location-head">
+                        <div class="wrapper-location">
+                            <div class="icon">
+                                <img
+                                    src="/img/map-img1.png"
+                                    alt="Icone localizacao"
+                                />
+                            </div>
+                            <div class="data">
+                                <span>Localização</span>
+                                <span class="edit">Rua Dom Pedro II, 440</span>
+                            </div>
+                        </div>
 
-      <section class="customer">
-        <h2 class="title item1">O que os clientes dizem a nosso respeito!</h2>
+                        <div class="wrapper-location">
+                            <div class="icon">
+                                <img src="/img/map-img2.png" alt="Icone Tel" />
+                            </div>
+                            <div class="data">
+                                <span>Telefone</span>
+                                <span class="edit">(35) 3876-4266</span>
+                            </div>
+                        </div>
 
-        <div class="item2">
-          <img src="./img/satisfacao-do-cliente.png" alt="customer" />
-          <p>
-            Mussum Ipsum, cacilds vidis litro abertis. Casamentiss faiz
-            malandris se pirulitá. Si num tem leite então bota uma pinga aí
-            cumpadi! Quem manda na minha terra sou euzis! Sapien in monti
-            palavris qui num significa nadis i pareci latim.
-          </p>
-          <span>Mussum de Souza</span>
-        </div>
+                        <div class="wrapper-location">
+                            <div class="icon">
+                                <img
+                                    src="/img/map-img3.png"
+                                    alt="Icone Email"
+                                />
+                            </div>
+                            <div class="data">
+                                <span>E-mail</span>
+                                <span class="edit">restaurante@email.com</span>
+                            </div>
+                        </div>
 
-        <div class="item3">
-          <img src="./img/satisfacao-do-cliente.png" alt="customer" />
-          <p>
-            Mussum Ipsum, cacilds vidis litro abertis. Casamentiss faiz
-            malandris se pirulitá. Si num tem leite então bota uma pinga aí
-            cumpadi! Quem manda na minha terra sou euzis! Sapien in monti
-            palavris qui num significa nadis i pareci latim.
-          </p>
-          <span>Gertrudes Maria</span>
-        </div>
+                        <div class="wrapper-location">
+                            <div class="icon">
+                                <img
+                                    src="/img/map-img4.png"
+                                    alt="Icone Horario"
+                                />
+                            </div>
+                            <div class="data">
+                                <span>Horário</span>
+                                <span class="edit"
+                                    >Seg. a Sex. - 18:00 às 23:00
+                                </span>
+                            </div>
+                        </div>
+                    </div>
 
-        <div class="item4">
-          <img src="./img/satisfacao-do-cliente.png" alt="customer" />
-          <p>
-            Mussum Ipsum, cacilds vidis litro abertis. Casamentiss faiz
-            malandris se pirulitá. Si num tem leite então bota uma pinga aí
-            cumpadi! Quem manda na minha terra sou euzis! Sapien in monti
-            palavris qui num significa nadis i pareci latim.
-          </p>
-          <span>Stanislau Fonseca</span>
-        </div>
-        <div></div>
-      </section>
-      <footer
-        class="h-[250px] w-full bg-amber-800/60 mt-4 grid grid-cols-3 p-8"
-      >
-        <div class="flex justify-center items-center">
-          <img src="img/desordem.png" class="h-24" alt="" />
-        </div>
-        <div
-          class="flex flex-col items-center text-white border-l-2 border-r-2 border-white/20"
-        >
-          <div class="space-x-3 mb-4">
-            <a href=""><i class="fa-brands fa-facebook-f"></i></a>
-            <a href=""><i class="fa-brands fa-instagram"></i></a>
-            <a href=""><i class="fa-solid fa-envelope"></i></a>
-          </div>
-          <h3 class="text-2xl tracking-wider font-semibold">Fale Conosco</h3>
-          <div>
-            <p class="text-sm decoration-solid">sac@restaurante.com</p>
-          </div>
-        </div>
-        <div>
-          <menu
-            class="menu-footer flex flex-col justify-center items-center h-full p-12 gap-2"
-          >
-            <li><a href="./index.html">HOME</a></li>
-            <li><a href="./sobrenos.html">SOBRE NÓS</a></li>
-          </menu>
-        </div>
-      </footer>
-    </main>
-  </body>
+                    <div class="map">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d29482.34750808337!2d-44.13106!3d-22.530678!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9e98fc3aab65f7%3A0xf0c1b495423b3fe!2sR.%20Dom%20Pedro%20II%2C%20440%20-%20Pte.%20Alta%2C%20Volta%20Redonda%20-%20RJ%2C%2027267-360%2C%20Brasil!5e0!3m2!1spt-BR!2sus!4v1680227880555!5m2!1spt-BR!2sus"
+                            width="100%"
+                            height="500"
+                            style="border: 5px solid rgba(0, 0, 0, 0.87)"
+                            allowfullscreen=""
+                            loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"
+                        ></iframe>
+                    </div>
+                </section>
+            </section>
+
+            <h2 class="title item1">
+                O que os clientes dizem a nosso respeito!
+            </h2>
+            <section class="customer">
+                <div class="item">
+                    <img src="./img/satisfacao-do-cliente.png" alt="customer" />
+                    <p>
+                        Mussum Ipsum, cacilds vidis litro abertis. Casamentiss
+                        faiz malandris se pirulitá. Si num tem leite então bota
+                        uma pinga aí cumpadi! Quem manda na minha terra sou
+                        euzis! Sapien in monti palavris qui num significa nadis
+                        i pareci latim.
+                    </p>
+                    <span>Mussum de Souza</span>
+                </div>
+
+                <div class="item">
+                    <img src="./img/satisfacao-do-cliente.png" alt="customer" />
+                    <p>
+                        Mussum Ipsum, cacilds vidis litro abertis. Casamentiss
+                        faiz malandris se pirulitá. Si num tem leite então bota
+                        uma pinga aí cumpadi! Quem manda na minha terra sou
+                        euzis! Sapien in monti palavris qui num significa nadis
+                        i pareci latim.
+                    </p>
+                    <span>Gertrudes Maria</span>
+                </div>
+
+                <div class="item">
+                    <img src="./img/satisfacao-do-cliente.png" alt="customer" />
+                    <p>
+                        Mussum Ipsum, cacilds vidis litro abertis. Casamentiss
+                        faiz malandris se pirulitá. Si num tem leite então bota
+                        uma pinga aí cumpadi! Quem manda na minha terra sou
+                        euzis! Sapien in monti palavris qui num significa nadis
+                        i pareci latim.
+                    </p>
+                    <span>Stanislau Fonseca</span>
+                </div>
+                <div></div>
+            </section>
+            <footer class="footer">
+                <div class="logo">
+                    <img src="img/desordem.png" alt="" />
+                </div>
+                <div class="contato">
+                    <div class="redes">
+                        <a href=""><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href=""><i class="fa-brands fa-instagram"></i></a>
+                        <a href=""><i class="fa-solid fa-envelope"></i></a>
+                    </div>
+                    <h3>Fale Conosco</h3>
+                    <p class="email">sac@restaurante.com</p>
+                </div>
+                <div>
+                    <menu class="menu-footer">
+                        <li><a href="./index.html">HOME</a></li>
+                        <li><a href="./sobrenos.html">SOBRE NÓS</a></li>
+                        <li><a href="./cart.html">CARRINHO</a></li>
+                    </menu>
+                </div>
+            </footer>
+        </main>
+    </body>
 </html>

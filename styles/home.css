@@ -1,0 +1,289 @@
+main {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+    margin: 0 auto;
+    gap: 45px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    background-color: rgba(243, 238, 238, 0.363);
+}
+
+nav .logo {
+    width: 115px;
+    margin-top: 20px;
+    transform: rotate(35deg);
+}
+
+nav .cart {
+    width: 20px;
+}
+
+.cart1 {
+    border: 1px solid rgb(112, 102, 82);
+    height: 40px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 50px;
+    background-color: orange;
+}
+
+.cart1:hover {
+    transform: scale(1.1);
+    box-shadow: 2px 2px 0px black;
+}
+
+nav div a {
+    color: black;
+    text-decoration: none;
+    font-size: 25px;
+    font-weight: 600;
+}
+
+nav .nav {
+    display: flex;
+    width: 290px;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.menu {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+    justify-content: center;
+    padding: 0 8rem;
+}
+
+.prato1 img {
+    width: 100%;
+    height: 80%;
+    object-fit: cover;
+    overflow: hidden;
+    transition: all 0.25s;
+}
+
+.prato1:hover img {
+    transform: scale(1.1);
+}
+
+.prato1 {
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    border: 2px solid rgb(163, 161, 161);
+    border-radius: 10px;
+    max-height: 400px;
+
+    transition: all 0.25s;
+}
+
+.prato1>.prato-content {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0.5rem;
+    text-align: center;
+
+}
+
+.prato-content>div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.add {
+    justify-self: flex-end;
+}
+
+.title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    cursor: default;
+    padding: 2rem;
+}
+
+.title h1 {
+    font-weight: 600;
+    font-size: 50px;
+}
+
+.title p {
+    text-align: center;
+    font-size: 24px;
+}
+
+.prato1:hover {
+    background-color: orange;
+    cursor: pointer;
+    border: 2px solid black;
+    transform: scale(1.1);
+    box-shadow: 2px 2px 0px 0px rgba(0, 0, 0);
+}
+
+.prato1:hover .prato-content .add {
+    background-color: rgb(255, 253, 250);
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 10px;
+    padding: 5px;
+}
+
+.prato1:hover .hidden {
+    display: inline-block;
+    padding: 1px 10px;
+}
+
+.location {
+    width: 100%;
+    background-image: url(/images/bg-location.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: antiquewhite;
+}
+
+.location .location-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.location .location-head {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 2rem;
+    margin: 0 50px;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.849);
+    color: white;
+}
+
+.location-head .data span {
+    font-size: 12px;
+    display: block;
+    padding-left: 20px;
+}
+
+.location-head .data .edit {
+    font-size: 16px;
+}
+
+.location .location-head .wrapper-location {
+    display: flex;
+    align-items: center;
+}
+
+.map {
+    margin: 0 50px;
+}
+
+.icon {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    border: 2px solid white;
+    border-radius: 100%;
+    align-items: center;
+    padding: 15px;
+    justify-content: center;
+}
+
+.customer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+    gap: 80px;
+    justify-content: center;
+    align-items: center;
+}
+
+.item1 {
+    grid-column: 1 / span 3;
+}
+
+.item {
+    max-width: 200px;
+    margin: 0 auto;
+}
+
+.customer span {
+    font-weight: bold;
+}
+
+.customer img {
+    width: 50px;
+}
+
+.prato1 .text {
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.hidden {
+    display: none;
+    margin-right: 10px;
+    font-weight: 600;
+    border: 1px solid rgb(0, 0, 0);
+    padding-left: 2px;
+    padding-right: 2px;
+    border-radius: 35px;
+    background-color: orange;
+}
+
+@media screen and (max-width: 1024px) {
+
+    .menu {
+        grid-template-columns: repeat(3, 1fr);
+        padding: 0 4rem;
+    }
+
+    .customer {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .title h1 {
+        font-size: 28px;
+    }
+
+    .title p {
+        font-size: 18px;
+    }
+
+    .menu {
+        grid-template-columns: repeat(2, 1fr);
+        padding: 0 4rem;
+    }
+
+    .location .location-head {
+        justify-content: flex-start;
+        margin: 0 10px;
+    }
+
+    .location .map {
+        margin: 0 10px;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .menu {
+        grid-template-columns: 1fr;
+        padding: 1rem;
+    }
+
+    .customer {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+}
